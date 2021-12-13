@@ -4,7 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import "react-toastify/dist/ReactToastify.min.css";
+// import "react-toastify/dist/ReactToastify.min.css";
 
 import App from "./App";
 

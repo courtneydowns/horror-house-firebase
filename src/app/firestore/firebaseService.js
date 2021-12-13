@@ -1,5 +1,5 @@
 import { setUserProfileData } from "./firestoreService";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import {
   getAuth,
   signInWithEmailAndPassword,
@@ -77,7 +77,7 @@ export async function socialLogin(selectedProvider) {
       await setUserProfileData(result.user);
     }
   } catch (error) {
-    toast.error(error.message);
+    // toast.error(error.message);
   }
 }
 
