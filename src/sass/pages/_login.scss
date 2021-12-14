@@ -1,0 +1,23 @@
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  height: 100vh;
+}
+
+.Signin__header {
+  font-family: $font-header;
+  letter-spacing: 0.25rem;
+  color: $color-secondary-dark;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.Signin__button {
+  background: transparent;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}

@@ -3,11 +3,11 @@ import { getAuth } from "firebase/auth";
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
+import "./sass/main.scss";
+
 import Header from "./components/header/Header";
 import Search from "./routes/search/Search";
 import Signin from "./components/auth/Signin";
-
-import "./css/style.css";
 
 const instructions = (
   <span>Navigate to the Search page to search for movie by title.</span>

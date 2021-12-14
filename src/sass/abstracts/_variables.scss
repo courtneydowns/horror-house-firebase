@@ -1,29 +1,27 @@
-// COLORS
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+@font-face {
+  font-family: "myFont";
+  src: url("../../assets/Another\ Danger\ Slanted\ -\ Demo.otf")
+    format("truetype");
+}
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+$font-header: "myFont", sans-serif;
+.selector {
+  font-family: $font-header;
+}
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+$color-primary: #cc0000;
+$color-primary-light: #ff1919;
+$color-primary-dark: #990000;
+
+$color-secondary-light: #999;
+$color-secondary: #777;
+$color-secondary-dark: #333;
 
 $color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$color-grey-light-2: #f0f0f0;
+$color-grey-light-3: #eee;
 
 $color-white: #fff;
 $color-black: #000;
 
-// FONT
 $default-font-size: 1.6rem;
-
-// GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
