@@ -1,0 +1,12 @@
+.Signin__header {
+  font-family: $font-header;
+  letter-spacing: 0.25rem;
+  color: $color-grey-light-3;
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 6rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}

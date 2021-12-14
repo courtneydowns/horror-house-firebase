@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  height: 100vh;
+}
+
+.Signin {
+  background-color: black;
+  width: 40vw;
+  height: 70vh;
+  transform: translate(50%);
+  display: block;
+  margin: auto;
+  margin-top: 8rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.Signin__h3 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.Signin__input {
+  margin-top: 2rem;
+}
+
+.Signin__button {
+  background: transparent;
+  border: none;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+  color: $color-grey-light-3;
+  cursor: pointer;
+}

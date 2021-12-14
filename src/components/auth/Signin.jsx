@@ -43,55 +43,54 @@ export default function Signin() {
   }
 
   return (
-    <form className='Signin'>
+    <div>
       <header>
         <h1 className='Signin__header'>Welcome to Horror House</h1>
-        <h3>Sign In or Sign Up</h3>
       </header>
-
-      <div>
-        <label>
-          <span>Email</span>
+      <form className='Signin'>
+        <h3 className='Signin__h3'>Signin</h3>
+        <div>
           <input
+            className='Signin__input'
+            placeholder='email'
             type='email'
             autoComplete='username'
             onInput={(ev) => setEmail(ev.target.value)}
           />
-        </label>
-      </div>
+        </div>
 
-      <div>
-        <label>
-          <span>Password</span>
+        <div>
           <input
+            className='Signin__input'
+            placeholder='password'
             type='password'
             autoComplete='current-password'
             onInput={(ev) => setPassword(ev.target.value)}
           />
-        </label>
-      </div>
+        </div>
 
-      <div>
-        <button
-          className='signin__sign-up-in-btn'
-          type='button'
-          onClick={isSignup ? createUser : signIn}
-        >
-          {isSignup ? "Sign Up" : "Sign In"}
-        </button>
-      </div>
+        <div>
+          <button
+            className='Signin__signup-btn'
+            type='button'
+            onClick={isSignup ? createUser : signIn}
+          >
+            {isSignup ? "Sign Up" : "Sign In"}
+          </button>
+        </div>
 
-      <p className='signin__instruction'>
-        {!isSignup ? `Don't` : "Already"} have an account? Click{" "}
-        <button
-          className='Signin__button'
-          type='button'
-          onClick={() => setIsSignup(!isSignup)}
-        >
-          here
-        </button>{" "}
-        to sign {!isSignup ? "up" : "in"}.
-      </p>
-    </form>
+        <p className='Signin__instruction'>
+          {!isSignup ? `Don't` : "Already"} have an account? Click{" "}
+          <button
+            className='Signin__button'
+            type='button'
+            onClick={() => setIsSignup(!isSignup)}
+          >
+            here
+          </button>{" "}
+          to sign {!isSignup ? "up" : "in"}.
+        </p>
+      </form>
+    </div>
   );
 }
